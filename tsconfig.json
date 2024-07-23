@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es2018",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"]
+}
