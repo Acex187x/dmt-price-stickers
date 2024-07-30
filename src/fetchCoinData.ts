@@ -135,9 +135,9 @@ export async function fetchCoinData(): Promise<{
 
     const event = await client.events.getEvent(et.eventId)
 
-    const dmtTransfer = !!event.actions.find(a => {
+    const dmtTransfer = !!event.actions.find(a => 
       a?.JettonTransfer?.jetton?.symbol && a?.JettonTransfer?.jetton?.symbol === 'DMT'
-    });
+    );
 
     const dmtFlow = !!event.value_flow.find(v => {
       return v.jettons?.find(j => j.jetton.symbol === 'DMT')
